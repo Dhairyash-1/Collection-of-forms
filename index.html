@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 80px;
+            align-items: center;
+            background: linear-gradient(#e66465, #9198e5);
+            transition: all 0.3s ease;
+            padding: 10px;
+        }
+        .title {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+            
+        }
+        .sub{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 600;
+            color: yellow;
+        }
+
+        button {
+            height: 55px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 5px;
+            background: #294652;
+            font-weight: 500;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sub">Employee Management System</div>
+
+    <div class="title">Developed by Dhairyash Gupta</div>
+    <div class="box">
+        <button onclick="freg()">Register here</button>
+        <button onclick="flogin()">Login</button>
+        <button onclick="fcreate()">Create an account</button>
+        <button onclick="fadd()">ADD Employee</button>
+    </div>
+
+
+    <script>
+        function freg() {
+            document.location.href = "reg.html";
+        }
+        function flogin() {
+            document.location.href = "Login.html";
+        }
+        function fcreate() {
+            document.location.href = "create.html";
+        }
+        function fadd() {
+            document.location.href = "addEmployee.html";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
